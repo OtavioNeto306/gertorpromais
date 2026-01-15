@@ -1,0 +1,34 @@
+/* Newsletter/Final CTA Form */
+.final-cta__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center; /* Center the button */
+}
+
+.final-cta__form .btn {
+  width: auto; /* Adjust width or set a max-width if needed */
+  padding-left: 30px; /* Example padding */
+  padding-right: 30px; /* Example padding */
+}
+
+/* Form Feedback Messages */
+.form-message {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: var(--border-radius-small);
+  text-align: center; /* Center feedback messages if they are used */
+}
+
+.form-message--success { /* Corrected class name */
+  color: var(--primary-dark);
+  background-color: var(--light-gray-bg);
+  border: 1px solid var(--primary-color);
+}
+
+.form-message--error { /* Corrected class name */
+  color: #D8000C; /* Red for errors */
+  background-color: #FFD2D2;
+  border: 1px solid #D8000C;
+}

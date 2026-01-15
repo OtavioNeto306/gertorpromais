@@ -1,0 +1,206 @@
+
+@media (max-width: 992px) {
+  .hero__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero__content {
+    order: 2;
+  }
+
+  .hero__image-wrapper {
+    order: 1;
+    margin-bottom: 40px;
+  }
+  
+  .hero__subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .features__grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .plans__grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .plan__card--popular {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 320px;
+    height: 100vh;
+    background: var(--white);
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right var(--transition-medium);
+    z-index: 1001;
+    padding-top: 60px; /* Reduzido para dar espaço aos botões */
+    padding-bottom: 20px;
+    display: flex; /* Para alinhar itens internos */
+  }
+  
+  .nav__menu.show-menu {
+    right: 0;
+  }
+  
+  .nav__list {
+    flex-direction: column;
+    gap: 20px; /* Espaçamento entre itens da lista */
+    text-align: center;
+    margin-bottom: 30px; /* Espaço antes dos botões */
+  }
+  
+  .nav__link {
+    font-size: 1.1rem; /* Tamanho de fonte ajustado */
+    padding: 8px 15px; /* Padding ajustado */
+    display: block;
+  }
+  
+  .nav__close {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 2rem;
+  }
+  
+  .nav__toggle {
+    display: block;
+  }
+
+  .nav__actions .nav__login-btn--desktop,
+  .nav__actions .nav__signup-btn--desktop {
+    display: none; /* Esconde botões do desktop no mobile */
+  }
+
+  .nav__menu-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os botões no menu mobile */
+    width: 80%; /* Para que os botões não fiquem muito largos */
+    margin-top: auto; /* Empurra para baixo se houver espaço */
+    padding-bottom: 20px; /* Espaço na parte inferior */
+  }
+
+  .nav__login-btn--mobile,
+  .nav__signup-btn--mobile {
+    display: block; /* Garante que sejam visíveis */
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px; /* Padding para botões no menu mobile */
+    font-size: 1rem;
+  }
+  
+  .header.scrolled .nav {
+    height: 70px;
+  }
+  
+  #header-nav-container.scrolled .nav {
+     height: 70px;
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+  
+  section {
+    padding: 60px 0;
+  }
+
+  .hero {
+    padding: 120px 0 60px;
+  }
+
+  .resource__item {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .testimonials__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .footer__section--logo,
+  .footer__social {
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__contact-list li{
+    justify-content: center;
+  }
+
+  .final-cta__form {
+    flex-direction: column;
+  }
+  .final-cta__form .btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav__menu-actions {
+    display: none; /* Esconde os botões do menu mobile em telas maiores */
+  }
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 0 10px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .btn--large {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+
+  .nav__actions {
+    gap: 8px; 
+  }
+  
+  .nav__toggle {
+    font-size: 1.5rem; /* Ajuste no tamanho do ícone do menu hambúrguer */
+  }
+
+  .plan__amount {
+    font-size: 2.2rem;
+  }
+  .plan__name {
+    font-size: 1.3rem;
+  }
+
+  .final-cta__input {
+    padding: 12px 15px;
+  }
+}
